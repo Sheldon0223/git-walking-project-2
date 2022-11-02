@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     Rigidbody rb;
     float lifeTime = 0; // 計時秒數
-    private float speed = 800f ;
+    private float speed = 100f ;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,15 +24,6 @@ public class Bullet : MonoBehaviour
         if (lifeTime > 3)
         {
             Destroy(gameObject);
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Enemy")
-        {
-            // 刪除物件(設為停用、並移除)
-            other.gameObject.SetActive(false);
-            Destroy(other.gameObject);
         }
     }
 }

@@ -14,11 +14,10 @@ GameObject:
   - component: {fileID: 5696990995616049231}
   - component: {fileID: 3027784014587401124}
   - component: {fileID: 5157039943832776044}
-  - component: {fileID: 8386567844206880158}
   - component: {fileID: 2225206414835533423}
   m_Layer: 0
   m_Name: bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,9 +113,9 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &5157039943832776044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,18 +126,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70807f5c539c9fe46bd26ba7448bce42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8386567844206880158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012456129939891426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9b376077fdfebc4f8bbe37c0d881c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!96 &2225206414835533423
@@ -162,7 +149,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -221,7 +208,7 @@ TrailRenderer:
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 39321
+      ctime0: 40285
       ctime1: 65535
       ctime2: 0
       ctime3: 0
