@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // 複製子彈到發射參考點上
-            Instantiate(bullet, firePoint.transform.position, Quaternion.identity);
+            Instantiate(bullet, firePoint.transform.position, transform.rotation);
         }
 
     }
