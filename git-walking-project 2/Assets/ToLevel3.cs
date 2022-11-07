@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement; // 添加這行載入場景管理類別
 
 
-public class ToLevel2 : MonoBehaviour
+public class ToLevel3 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,12 +17,10 @@ public class ToLevel2 : MonoBehaviour
     {
         
     }
-     private void OnTriggerEnter(Collider other)
+    // 當碰撞(Trigger)發生時
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "sus")
-        {
-           // 切換場景到 Level2
-        SceneManager.LoadScene("Level2");
-        }
+        // 切換場景到 Level3
+        SceneManager.LoadScene("Level3");
     }
 }
