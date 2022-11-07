@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private float hp=100f;
+    private float hp = 100f;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +19,12 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.tag);
         if (other.tag == "Bullet")
         {
+            // 先扣血
             hp -= 25;
 
+            // 如果沒血了，就刪除自己
             if (hp <= 0)
             {
                 gameObject.SetActive(false);
